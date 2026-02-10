@@ -1,0 +1,9 @@
+# Ignorar el archivo de configuración de subida
+sftp.json
+
+# Si el archivo está dentro de una carpeta .vscode, ignoramos la carpeta completa
+.vscode/
+
+# Archivos temporales de sistema
+.DS_Store
+Thumbs.db
