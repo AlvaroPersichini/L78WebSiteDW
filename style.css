@@ -14,9 +14,9 @@ body {
     scrollbar-width: none;
 }
 
-.menu-overlay {
+/* .menu-overlay {
     display: none;
-}
+} */
 
 
 .desktop {
@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(83, 86, 93);
-    color: white;
+    color: rgb(189, 12, 12);
     z-index: 1000;
 }
 
@@ -62,7 +62,7 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-    color: white;
+    color: rgb(126, 43, 43);
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -297,34 +297,23 @@ body {
 }
 
 .profesion {
-
     font-size: clamp(1.5rem, 2vw, 2.3rem);
     margin: 10px 0;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.9s ease, transform 1s ease;
 }
-
 .profesion.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* .p-about1 {
-    text-align: justify;
-    font-size: clamp(1rem, 1.2vw, 2rem);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    max-width: 500px;
-    padding-bottom: 0;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s ease, transform 1s ease;
-} */
+
+
+
 
 .p-about1 {
-    font-family: "Inter", "Segoe UI", sans-serif;
+   
     font-size: clamp(1.05rem, 1.1vw, 1.3rem);
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -336,6 +325,7 @@ body {
     transition: opacity 0.8s ease, transform 0.8s ease;
     text-align: justify;
 }
+
 
 
 .p-about1.show {
@@ -1166,39 +1156,6 @@ a .industry-card {
 
 
 
-/********* BOTON Ver Mas *****************/
-/* .cajaBotonVerMas {
-    background-color: #5afdbfd2;
-    width: 100px;
-    height: 50px;
-    border-radius: 2px;
-}
-
-.botonVerMas {
-    color: #040026;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.skills:nth-child(2) {
-    align-content: flex-start;
-}
-
-.cajaBotonVerMas:hover {
-    background-color: #93e9e9;
-} */
-
-/*******************************************/
-
-
-
-
-
 
 .presentacion {
     position: relative;
@@ -1660,53 +1617,12 @@ a .industry-card {
     max-width: 1300px;
 }
 
-.tarjeta {
-    height: 450px;
-    border-radius: 15px;
-}
-
-.tarjeta-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    display: block;
-    background-color: white;
-}
-
-.tarjeta-content {
-    padding: 20px;
-    background-color: #00224b;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-}
-
-.arrow {
-    align-self: center;
-}
-
-.tarjeta-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.tarjeta-content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #d0d8e0;
-    text-align: center;
-}
 
 
 
 
 /* *************** MENU DESPLEGABLE ****************** */
-.menu-overlay {
+/* .menu-overlay {
     position: fixed;
     top: 50px;
     left: 0;
@@ -1720,12 +1636,35 @@ a .industry-card {
     transform: translateY(-2000px);
     transition: transform 0.6s ease;
     background-size: cover;
+} */
+
+.menu-overlay {
+    position: fixed;
+    top: -110%; /* Totalmente fuera de la pantalla (arriba) */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/static/assets/images/fondoPiedrasoscuro.png");
+    background-size: cover;
+    background-color: #1a1a1a; /* Fondo de respaldo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Por encima de todo */
+    transition: top 0.5s ease-in-out; /* Esta es la animación de despliegue */
 }
 
-.menu-overlay.active {
+/* .menu-overlay.active {
     transform: translateY(0);
     visibility: visible;
     transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s 0s;
+    z-index: 1000;
+} */
+
+.menu-overlay.active {
+    top: 0; /* Al hacer click, baja a su posición visible */
+    margin-top: 50px;
+
 }
 
 .menu-overlay.active {
@@ -1897,7 +1836,7 @@ a .industry-card {
         padding: 0;
         padding-left: 20px;
         padding-right: 20px;
-        z-index: 1000;
+        z-index: 2000;
     }
 
     .ulHorizontal li:nth-child(1),
