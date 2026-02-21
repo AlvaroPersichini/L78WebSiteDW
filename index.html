@@ -14,23 +14,85 @@
 
 
 
-    <div class="desktop">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href=""><img src="/assets/img/flechas-amarillas-1-removebg-preview.png" alt=""></a>
-                </li>
-                <li><a href="#top">Inicio</a></li>
-                <li><a href="#Nosotros">Nosotros</a></li>
-                <li><a href="#Servicios">Servicios</a></li>
-                <li><a href="#Industrias">Industrias</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+     <!-- ********** MENU Mobile *************** -->
+  <header class="site-header">
+    <nav class="mobile">
+      <ul class="ulHorizontal">
+        <li class="lineasBurga">
+          <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="cruz">X</span>
+          </button>
+        </li>
+        <li class="liHorizontal1">
+        </li>
+      </ul>
+
+
+      <!-- ********** MENU DESPLEGABLE *************** -->
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+
+          <ul class="menu-list">
+            <h2>L78</h2>
+          </ul>
+
+          <ul class="menu-list">
+            <li><a href="#top" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#Nosotros" onclick="toggleMenu()">Nosotros</a></li>
+            <li><a href="#Servicios" onclick="toggleMenu()">Servicios</a></li>
+            <li><a href="#Industrias" onclick="toggleMenu()">Industrias</a></li>
+            <li><a href="#Contacto" onclick="toggleMenu()">Contacto</a></li>
+          </ul>
+
+          <ul class="menu-list">
+            <h2>Proyectos</h2>
+          </ul>
+
+          <ul class="menu-list">
+            <li><a href="" onclick="toggleMenu()">Matriceria</a></li>
+            <li><a href="" onclick="toggleMenu()">Máquinas Especiales</a></li>
+            <li><a href="" onclick="toggleMenu()">Automotriz</a></li>
+            <li><a href="" onclick="toggleMenu()">Movilidad y Prototipado</a></li>
+            <li><a href="" onclick="toggleMenu()">Aeronáutica</a></li>
+            <li><a href="" onclick="toggleMenu()">Documentación Técnica</a></li>
+          </ul>
+
+          <ul class="menu-list">
+            <li>
+              <p>&copy; 2025 L78 Ingenieria</p>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
 
 
 
+            <div class="desktop">
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href=""><img src="/assets/img/flechas-amarillas-1-removebg-preview.png" alt=""></a>
+                        </li>
+                        <li><a href="#top">Inicio</a></li>
+                        <li><a href="#Nosotros">Nosotros</a></li>
+                        <li><a href="#Servicios">Servicios</a></li>
+                        <li><a href="#Industrias">Industrias</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
 
+
+
+<script src="/script.js"></script>
 
 
 </body>
