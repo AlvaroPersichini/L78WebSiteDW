@@ -162,6 +162,7 @@ body {
     padding: 0;
     z-index: 1001;
 }
+
 .hamburger .barra {
     display: block;
     width: 100%;
@@ -171,6 +172,7 @@ body {
     margin: 1px 0;
     transition: all 0.3s ease;
 }
+
 .hamburger .cruz {
     position: absolute;
     top: 50%;
@@ -181,12 +183,15 @@ body {
     display: none;
     pointer-events: none;
 }
+
 .hamburger.active .barra {
     display: none;
 }
+
 .hamburger.active .cruz {
     display: block;
 }
+
 /****************************************************/
 
 
@@ -303,6 +308,7 @@ body {
     transform: translateY(40px);
     transition: opacity 0.9s ease, transform 1s ease;
 }
+
 .profesion.show {
     opacity: 1;
     transform: translateY(0);
@@ -313,7 +319,7 @@ body {
 
 
 .p-about1 {
-   
+
     font-size: clamp(1.05rem, 1.1vw, 1.3rem);
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -1186,6 +1192,22 @@ a .industry-card {
     gap: 60px;
 }
 
+
+.contact-info {
+    align-items: center;
+}
+
+.imagenSeccionContacto {
+
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+
+}
+
 /* ----- INFO ----- */
 .contact-info h2 {
     font-size: 3rem;
@@ -1502,7 +1524,7 @@ a .industry-card {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s ease;
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 0.95rem;
     opacity: 0.8;
 
@@ -1640,18 +1662,22 @@ a .industry-card {
 
 .menu-overlay {
     position: fixed;
-    top: -110%; /* Totalmente fuera de la pantalla (arriba) */
+    top: -110%;
+    /* Totalmente fuera de la pantalla (arriba) */
     left: 0;
     width: 100%;
     height: 100vh;
     background-image: url("/static/assets/images/fondoPiedrasoscuro.png");
     background-size: cover;
-    background-color: #1a1a1a; /* Fondo de respaldo */
+    background-color: #1a1a1a;
+    /* Fondo de respaldo */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Por encima de todo */
-    transition: top 0.5s ease-in-out; /* Esta es la animación de despliegue */
+    z-index: 1000;
+    /* Por encima de todo */
+    transition: top 0.5s ease-in-out;
+    /* Esta es la animación de despliegue */
 }
 
 /* .menu-overlay.active {
@@ -1662,7 +1688,8 @@ a .industry-card {
 } */
 
 .menu-overlay.active {
-    top: 0; /* Al hacer click, baja a su posición visible */
+    top: 0;
+    /* Al hacer click, baja a su posición visible */
     margin-top: 50px;
 
 }
